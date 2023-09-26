@@ -1,0 +1,10 @@
+<div class="todos" *ngIf="todos">
+    <table>
+       <tbody>
+            <tr *ngFor="let todo of todos">
+                <td>{{todo.title}}</td>
+                <td>{{todo.user?.name}}</td>
+            </tr>
+       </tbody>
+    </table>
+</div>
